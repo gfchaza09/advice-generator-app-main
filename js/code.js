@@ -15,7 +15,7 @@ const fetchAdvices = async () => {
         })
 
     adviceId.textContent = adviceData.id;
-    adviceText.textContent = adviceData.advice;
+    adviceText.textContent = `“${adviceData.advice}”`;
 }
 
 diceButton.addEventListener("click", ()=>{
