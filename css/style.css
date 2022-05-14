@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    margin: 0px auto;
+    padding: 2.5rem 3rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+
+.card__title {
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.25rem;
+}
+
+.card__text{
+    color: hsl(193, 38%, 86%);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.card__divider--desktop, .card__divider--mobile {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.card__divider--mobile {
+    display: none;
+}
+
+.card__btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.card__btn:hover{
+    box-shadow: 0px 0px 20px 10px rgba(82,255,169,0.6);
+}
+
+.footer {
+    color: hsl(217, 19%, 38%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:600px) {
+    .card {
+        width: 90%;
+        max-width: 380px;
+        padding: 2.5rem 1.1rem;
+        font-size: 1rem;
+    }
+
+    .card__divider--desktop {
+        display: none;
+    }
+
+    .card__divider--mobile {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .card__btn {
+        width: 65px;
+        height: 65px;
+        bottom: -35px;
+    }
+}
